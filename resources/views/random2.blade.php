@@ -18,14 +18,6 @@
             padding: 20px;
         }
 
-        .character-card {
-            border: 1px solid #ddd;
-            padding: 15px;
-            border-radius: 8px;
-            text-align: center;
-            margin-bottom: 20px;
-        }
-
         .loading {
             text-align: center;
             margin-top: 20px;
@@ -64,6 +56,8 @@
             background-color: #218838;
         }
     </style>
+</head>
+<body>
     <div class="text-right" style="position: relative;">
         <div style="position: absolute; right: 20px; top: 20px;">
             <a href="{{ route('home') }}">
@@ -71,8 +65,7 @@
             </a>
         </div>
     </div>
-</head>
-<body>
+
     <div class="container mt-5">
         <h1 class="text-center mb-4">Random Character</h1>
 
@@ -105,7 +98,6 @@
                 <img src="{{ asset('images/warp10.png') }}" alt="Warp 10" class="warp-button" style="width: 150px; height: auto;">
             </a>
         </div>
-
     </div>
 
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
@@ -118,7 +110,6 @@
                 $('.warp-button').fadeIn(); 
             }, 11000); 
 
-           
             $('.skip-button').click(function() {
                 $('.character').fadeIn();
                 $('.loading').hide();
